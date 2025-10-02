@@ -12,4 +12,17 @@ public class BottleData : MonoBehaviour
     public int numberOfTopColorLayers = 1;
 
     public Color previousTopColor;
+
+    public void IncreaseNumberOfColorsInBottle(int number)
+    {
+        numberOfColorsInBottle += number;
+    }
+    public void DecreaseNumberOfColorsInBottle(int number)
+    {
+        numberOfColorsInBottle -= number;
+    }
+    public void UpdatePreviousTopColor()
+    {
+        previousTopColor = topColor;
+    }
 }

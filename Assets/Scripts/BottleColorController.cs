@@ -32,7 +32,7 @@ public class BottleColorController : MonoBehaviour
     public void UpdateTopColorValues(BottleData bottleData)
     {
         var bottleColors = bottleData.bottleColors;
-        var searchColorLength = bottleColors.Length - (4 - bottleData.numberOfTopColorLayers);
+        var searchColorLength = bottleColors.Length - (4 - bottleData.numberOfColorsInBottle);
         FindNumberOfTopLayers(searchColorLength, bottleData);
         FindTopColor(searchColorLength, bottleData);
         UpdateColorsOnShader(bottleData);
